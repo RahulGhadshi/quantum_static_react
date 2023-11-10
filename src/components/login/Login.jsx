@@ -1,6 +1,10 @@
 import React from "react";
+import Footer from "../Footer";
+import { createSearchParams, useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = React.useState({
     email: "",
     password: "",
@@ -23,6 +27,11 @@ export default function Login() {
     if (formData.rememberMe) {
       console.log("Remember Me");
     }
+    // navigate("/walkIn");
+    navigate({
+      pathname: '/walkIn/',
+      search: createSearchParams({ user: formData.email }).toString()
+    });
   }
 
   const handleClickShowPassword = () => {
@@ -77,7 +86,7 @@ export default function Login() {
           <p className="form--input--float">FORGOT PASSWORD?</p>
         </div>
 
-        <div className="form--marketing">
+        <div className="form--remember">
           <input
             id="okayToEmail"
             type="checkbox"
@@ -93,6 +102,7 @@ export default function Login() {
           <p className="form--footer--reg">CREATE AN ACCOUNT</p>
         </div>
       </form>
+      <Footer />
     </div>
   );
 }

@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: Quicksand, sans-serif;
+  background-color: #EEEEEE;
 }
 
 p {
@@ -46,11 +47,12 @@ input {
 
 
 .login--page {
-  height: calc(100vh - 142px);
-  background-color: #EEEEEE;
+  height: calc(100vh - 56px);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 70px;
 }
 
 .form {
@@ -100,14 +102,14 @@ input {
   cursor: pointer;
 }
 
-.form--marketing {
+.form--remember {
   width: 100%;
   display: flex;
   margin-bottom: 20px;
   align-items: center;
 }
 
-.form--marketing > input {
+.form--remember > input {
   margin-right: 10px;
 }
 

@@ -1,0 +1,101 @@
+.card {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 6px #0000003d;
+  border-radius: 2px;
+  padding: 16px;
+  position: relative;
+}
+
+.expiry-days {
+  position: absolute;
+  right: 24px;
+  background-color: #ffe4e6;
+  color: #d10107;
+  font-size: 12px;
+  padding: 2px 8px;
+  font-weight: bold;
+  top: -8px;
+}
+
+.more-details {
+  text-align: center;
+  padding-top: 24px;
+  font-weight: 600;
+}
+
+.more-details-btn {
+  padding: 5px 16px;
+  background-color: #3fd28b;
+  color: #1f2834;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px #0000003d;
+}
+
+.general-info {
+  border-bottom: 1px solid #0000003d;
+  padding-bottom: 17px;
+}
+
+.job-title {
+  color: #1f7a54;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.roll-text,
+.date-text {
+  color: #666666;
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+.jobrolls {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.date-loc {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.date-loc > img {
+  height: 13px;
+  padding-right: 6px;
+}
+
+.date {
+  color: #222222;
+  font-size: 14px;
+}
+
+.separator {
+  color: #0000001f;
+  padding: 0 18px;
+}
+
+.location {
+  color: #666666;
+  font-size: 12px;
+}
+
+.jobroll-info {
+  padding-top: 16px;
+}
+
+.intern-text {
+  width: 218px;
+  height: 18px;
+  background-color: #eedd6b;
+  padding: 3px 8px;
+  border-radius: 9px;
+  font-size: 10px;
+  font-weight: 600;
+}

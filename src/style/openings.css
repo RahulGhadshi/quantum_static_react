@@ -1,0 +1,8 @@
+.openings {
+  padding: 36px 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+}
