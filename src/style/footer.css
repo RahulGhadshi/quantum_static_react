@@ -1,0 +1,19 @@
+footer {
+  background-color: #EEEEEE;
+  width: 100%;
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.footer--text {
+  color: #1F7A54;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.footer-separator {
+  color: #0000001F;
+  padding: 10px 0;
+}

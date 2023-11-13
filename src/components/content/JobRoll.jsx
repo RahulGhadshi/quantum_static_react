@@ -15,6 +15,7 @@ export default function JobRoll(props) {
 
   return (
     <div className="jobroll">
+      {props.id > 0 && <div className="separator"> | </div>}
       <img src={`.../../../src/assets/${img_str}`} alt="job-icon" />
       {props.roll}
     </div>

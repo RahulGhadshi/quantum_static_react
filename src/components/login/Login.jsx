@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Footer";
+import "../../style/login.css";
 import { createSearchParams, useNavigate } from "react-router-dom";
 
 export default function Login() {

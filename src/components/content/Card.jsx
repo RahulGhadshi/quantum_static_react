@@ -1,11 +1,10 @@
 import React from "react";
 import JobRoll from "./JobRoll";
 import "../../style/card.css";
-import { nanoid } from "nanoid";
 
 export default function Card(props) {
-  const jobrolldesc = props.jobRolls.map((data) => {
-    return <JobRoll roll={data} key={nanoid()} />;
+  const jobrolldesc = props.jobRolls.map((data, index) => {
+    return <JobRoll roll={data} key={index} id={index}/>;
   });
 
   function expiryDaysCount() {
@@ -22,7 +21,7 @@ export default function Card(props) {
     <div className="card">
       {expiryDaysCount() < 10 && (
         <label className="expiry-days">
-          Expires in {expiryDaysCount()} days
+          Expires in {expiryDaysCount()} {expiryDaysCount() == 1 ? 'day': 'days'}
         </label>
       )}
       <div className="general-info">
